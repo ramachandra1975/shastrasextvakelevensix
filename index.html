@@ -1,0 +1,1760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Attention, Memory, and the Aging Brain: The Karaṇa Read Toward ADHD, Working-Memory Impairment, and Dementia | Śāstra Extended, Vāk Eleven — Part Six</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Noto+Serif+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --void:#170a0d;
+    --panel:#221016;
+    --panel-2:#2b131a;
+    --crimson:#7a1530;
+    --crimson-bright:#a81c3d;
+    --crimson-glow:#c2264a;
+    --gold:#c9a227;
+    --gold-soft:#e3c56b;
+    --gold-dim:#8a7434;
+    --ink:#f1e6d6;
+    --ink-muted:#c3b3a0;
+    --ink-faint:#8f7d6d;
+    --border:rgba(201,162,39,0.22);
+    --border-soft:rgba(201,162,39,0.12);
+    --tag-ca:#4f7a52;
+    --tag-ms:#2f6f8f;
+    --tag-as:#9a5a2a;
+    --tag-safety:#b23b3b;
+    --shadow: 0 18px 50px rgba(0,0,0,0.55);
+  }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body {
+    margin:0;
+    background: radial-gradient(ellipse at 20% -10%, rgba(122,21,48,0.35), transparent 55%), radial-gradient(ellipse at 90% 10%, rgba(201,162,39,0.08), transparent 45%), var(--void);
+    color:var(--ink);
+    font-family:'EB Garamond', Georgia, serif;
+    font-size:18px;
+    line-height:1.72;
+  }
+  ::selection { background:var(--crimson-bright); color:#fff; }
+  .devanagari { font-family:'Noto Serif Devanagari', serif; }
+  a { color:var(--gold-soft); }
+  header.masthead {
+    position:relative;
+    padding:60px 6vw 34px;
+    border-bottom:1px solid var(--border);
+    background: linear-gradient(180deg, rgba(122,21,48,0.28), transparent 70%);
+    overflow:hidden;
+  }
+  .eyebrow {
+    display:flex; align-items:center; gap:14px;
+    font-family:'Cinzel', serif; font-size:12.5px; letter-spacing:0.28em;
+    text-transform:uppercase; color:var(--gold-soft); margin-bottom:20px;
+  }
+  .eyebrow .rule { flex:0 0 44px; height:1px; background:linear-gradient(90deg, var(--gold), transparent); }
+  h1.title {
+    font-family:'Cinzel', serif; font-weight:700; font-size:clamp(28px, 4.2vw, 50px);
+    line-height:1.14; margin:0 0 16px; color:var(--ink); max-width:20ch;
+    text-shadow:0 2px 30px rgba(122,21,48,0.5);
+  }
+  .title .accent { color:var(--gold-soft); font-style:italic; font-family:'EB Garamond', serif; font-weight:500; }
+  p.subtitle { max-width:70ch; font-size:18.5px; color:var(--ink-muted); margin:0 0 24px; }
+  .meta-strip {
+    display:flex; flex-wrap:wrap; gap:8px 24px; font-family:'Cinzel', serif; font-size:10.5px;
+    letter-spacing:0.13em; text-transform:uppercase; color:var(--ink-faint);
+    border-top:1px solid var(--border-soft); padding-top:16px;
+  }
+  .meta-strip span b { color:var(--gold-soft); font-weight:600; }
+  .safety-banner {
+    margin:24px 6vw 0; padding:16px 20px; background:rgba(178,59,59,0.12);
+    border:1px solid rgba(178,59,59,0.4); border-radius:2px; max-width:980px;
+  }
+  .safety-banner .lbl {
+    font-family:'Cinzel', serif; font-size:10.5px; letter-spacing:0.14em; text-transform:uppercase;
+    color:#e08a8a; margin-bottom:6px;
+  }
+  .safety-banner p { margin:0; color:var(--ink); font-size:15.5px; }
+  .key-strip { display:flex; flex-wrap:wrap; gap:10px; padding:20px 6vw 0; max-width:980px; }
+  .tag {
+    display:inline-flex; align-items:center; gap:7px; font-family:'Cinzel', serif; font-size:10px;
+    letter-spacing:0.09em; text-transform:uppercase; padding:6px 11px; border-radius:20px;
+    border:1px solid var(--border); color:var(--ink);
+  }
+  .tag .dot { width:7px; height:7px; border-radius:50%; }
+  .tag.ca .dot { background:var(--tag-ca); }
+  .tag.ms .dot { background:var(--tag-ms); }
+  .tag.as .dot { background:var(--tag-as); }
+  .tag.safety .dot { background:var(--tag-safety); }
+  nav.tabbar {
+    position:sticky; top:0; z-index:40; display:flex; overflow-x:auto; gap:2px; margin:32px 0 0;
+    padding:0 6vw; background:linear-gradient(180deg, rgba(23,10,13,0.97), rgba(23,10,13,0.93));
+    backdrop-filter:blur(10px); border-top:1px solid var(--border-soft); border-bottom:1px solid var(--border);
+    scrollbar-width:thin;
+  }
+  nav.tabbar::-webkit-scrollbar { height:5px; }
+  nav.tabbar::-webkit-scrollbar-thumb { background:var(--gold-dim); border-radius:4px; }
+  .tab-btn {
+    flex:0 0 auto; background:none; border:none; cursor:pointer; font-family:'Cinzel', serif;
+    font-size:11px; letter-spacing:0.08em; text-transform:uppercase; color:var(--ink-faint);
+    padding:16px 15px 13px; border-bottom:2px solid transparent; white-space:nowrap;
+    transition:color .2s ease, border-color .2s ease;
+  }
+  .tab-btn .num { color:var(--gold-dim); margin-right:7px; font-weight:600; }
+  .tab-btn:hover { color:var(--ink); }
+  .tab-btn.active { color:var(--gold-soft); border-bottom-color:var(--crimson-bright); }
+  .tab-btn.active .num { color:var(--gold-soft); }
+  main { padding:40px 6vw 100px; max-width:960px; margin:0 auto; }
+  .panel { display:none; animation:fade .35s ease; }
+  .panel.active { display:block; }
+  .panel-head { margin-bottom:30px; }
+  .panel-head .kicker {
+    font-family:'Cinzel', serif; font-size:11.5px; letter-spacing:0.2em; text-transform:uppercase;
+    color:var(--crimson-glow); margin-bottom:9px;
+  }
+  .panel-head h2 { font-family:'Cinzel', serif; font-weight:600; font-size:clamp(23px, 2.8vw, 32px); margin:0 0 10px; color:var(--ink); }
+  .panel-head .lede { color:var(--ink-muted); font-size:17.5px; max-width:72ch; }
+  section.block { margin:32px 0; }
+  h3.block-h {
+    font-family:'Cinzel', serif; font-weight:600; font-size:18.5px; color:var(--gold-soft);
+    margin:0 0 4px; display:flex; align-items:baseline; gap:9px;
+  }
+  h3.block-h .idx { color:var(--crimson-glow); font-size:14.5px; }
+  .block p { color:var(--ink); font-size:17.5px; margin:13px 0; }
+  .block p.sub { color:var(--ink-muted); font-size:16.5px; }
+  blockquote.term {
+    margin:16px 0; padding:13px 20px; border-left:2px solid var(--gold-dim); background:var(--panel-2);
+    font-family:'Noto Serif Devanagari', serif; color:var(--gold-soft); font-size:19px;
+  }
+  blockquote.term span.gloss {
+    display:block; font-family:'EB Garamond', serif; font-style:italic; color:var(--ink-muted);
+    font-size:15px; margin-top:5px;
+  }
+  table { width:100%; border-collapse:collapse; margin:18px 0; font-size:15px; }
+  thead th {
+    font-family:'Cinzel', serif; font-size:10px; letter-spacing:0.07em; text-transform:uppercase;
+    color:var(--gold-soft); text-align:left; padding:9px 11px; border-bottom:1px solid var(--border);
+  }
+  tbody td { padding:10px 11px; border-bottom:1px solid var(--border-soft); color:var(--ink-muted); vertical-align:top; }
+  tbody tr:hover td { background:rgba(201,162,39,0.04); color:var(--ink); }
+  tbody td:first-child { color:var(--ink); font-weight:600; }
+  .divider { height:1px; background:linear-gradient(90deg, var(--border), transparent); margin:38px 0; }
+  .callout {
+    background:var(--panel); border:1px solid var(--border); border-radius:2px; padding:20px 24px;
+    margin:20px 0; box-shadow:var(--shadow);
+  }
+  .callout.rq { border-left:3px solid var(--crimson-bright); }
+  .callout.safety { border-left:3px solid var(--tag-safety); }
+  .callout .lbl {
+    font-family:'Cinzel', serif; font-size:10px; letter-spacing:0.15em; text-transform:uppercase;
+    color:var(--crimson-glow); margin-bottom:7px;
+  }
+  .callout.safety .lbl { color:#e08a8a; }
+  .callout p { margin:0; color:var(--ink); font-size:16px; }
+  .tagrow { display:flex; gap:8px; margin:8px 0 2px; flex-wrap:wrap; }
+  .tagrow .tag { padding:3px 9px; font-size:9px; }
+  .glossary dt { font-family:'Cinzel', serif; color:var(--gold-soft); font-size:14.5px; margin-top:14px; }
+  .glossary dd { margin:3px 0 0; color:var(--ink-muted); }
+  footer {
+    padding:36px 6vw 56px; border-top:1px solid var(--border); color:var(--ink-faint);
+    font-size:13px; font-family:'Cinzel', serif; letter-spacing:0.04em;
+  }
+  footer a { color:var(--gold-dim); }
+  @keyframes fade { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:translateY(0); } }
+  @media (max-width: 720px) { body { font-size:16.5px; } }
+</style>
+</head>
+<body>
+
+<header class="masthead">
+  <div class="eyebrow"><span class="rule"></span> Śāstra Extended · Vāk Eleven Monograph Series · Part Six</div>
+  <h1 class="title">Attention, Memory, and the Aging Brain<br><span class="accent">Reading the Karaṇa Toward the Clinic</span></h1>
+  <p class="subtitle">Parts One through Five treated the karaṇa from within — its biomechanics, its
+  epigraphic record, its neuropsychology, its existential structure, and the authority, history,
+  embodiment, and community that make any of that structure possible to reach. This sixth part turns
+  the lens outward, asking an explicitly objective, clinically-adjacent question: what does a
+  centuries-old discipline of trained sequential movement, sustained attention, and rhythmic
+  repetition have to say to three conditions of attention and memory — attention-deficit/hyperactivity
+  presentations, short-term and working-memory impairment, and dementia across its stages — considered
+  not as metaphor but as candidate mechanism.</p>
+  <div class="meta-strip">
+    <span><b>Series</b> Śāstra Extended, Vāk Eleven</span>
+    <span><b>Position</b> Part Six, first of two clinically-oriented extensions</span>
+    <span><b>Method</b> Three-tier evidentiary tagging plus an explicit safety register</span>
+    <span><b>Register</b> Objective and clinically cautious, not therapeutic prescription</span>
+  </div>
+</header>
+
+<div class="safety-banner">
+  <div class="lbl">Before Anything Else</div>
+  <p>This paper is a work of interdisciplinary humanities and cognitive-science synthesis, written by an
+  AI research instrument, not a clinical protocol, a diagnostic tool, or a substitute for the assessment,
+  medication, therapy, or supervision of a qualified physician, neurologist, psychiatrist, occupational
+  therapist, or dementia-care specialist. Nothing in the six chapters that follow should be read as
+  advising any reader to delay, replace, or reduce an existing medical treatment in favor of movement
+  practice. Where this paper proposes that karaṇa-based movement may plausibly support attention, memory,
+  or cognitive function, it is proposing a hypothesis for a supervised, adjunctive practice to sit
+  alongside established care — never in place of it.</p>
+</div>
+
+<div class="key-strip">
+  <span class="tag ca"><span class="dot"></span>Classical Attested</span>
+  <span class="tag ms"><span class="dot"></span>Modern Scholarship</span>
+  <span class="tag as"><span class="dot"></span>AI Synthesis</span>
+  <span class="tag safety"><span class="dot"></span>Safety Note</span>
+</div>
+
+<nav class="tabbar" id="tabbar"></nav>
+<main id="main"></main>
+
+<footer>
+  Śāstra Extended · Vāk Eleven · Part Six — Cultural Musings Research Platform. An interdisciplinary
+  synthesis offered for scholarly and exploratory reading; not medical guidance. See Chapter One,
+  Section 1.4, for the full statement of method and limits.
+</footer>
+
+<script>
+const TABS = [
+  {id:"ground", label:"Why Read This Way At All"},
+  {id:"adhd", label:"Attention"},
+  {id:"memory", label:"Working Memory"},
+  {id:"dementia", label:"Dementia"},
+  {id:"mechanism", label:"Mechanism"},
+  {id:"implementation", label:"Practice Design"},
+  {id:"questions", label:"What Would Need Testing"},
+  {id:"unity", label:"A Unified Reading"},
+  {id:"coda", label:"Coda"}
+];
+const tabbar = document.getElementById('tabbar');
+TABS.forEach((t,i)=>{
+  const b = document.createElement('button');
+  b.className = 'tab-btn' + (i===0?' active':'');
+  b.dataset.target = t.id;
+  b.innerHTML = `<span class="num">${String(i).padStart(2,'0')}</span>${t.label}`;
+  b.addEventListener('click', ()=>activate(t.id));
+  tabbar.appendChild(b);
+});
+function activate(id){
+  document.querySelectorAll('.tab-btn').forEach(b=>b.classList.toggle('active', b.dataset.target===id));
+  document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('active', p.id===id));
+  window.scrollTo({top: document.getElementById('tabbar').offsetTop - 4, behavior:'smooth'});
+}
+</script>
+
+<script>
+document.getElementById('main').innerHTML = `
+
+<section class="panel active" id="ground">
+  <div class="panel-head">
+    <div class="kicker">I · Why Read This Way At All</div>
+    <h2>From Existential Register to Clinical Register</h2>
+    <p class="lede">Parts One through Five asked what the karaṇa system means to the body that practices
+    it and the mind that studies it. This chapter asks a different kind of question, and states plainly
+    why the series is entitled to ask it at all: does a discipline built around sustained sequential
+    attention, precise proprioceptive recall, and rhythmic repetition bear on three conditions defined,
+    in the clinical literature, by disruption to exactly those same capacities.</p>
+  </div>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">1.1</span> Three Conditions, One Shared Feature</h3>
+    <p>Attention-deficit/hyperactivity presentations, short-term and working-memory impairment, and
+    dementia across its stages are, in ordinary clinical description, three separate diagnostic
+    categories with different causes, different courses, and different ages of onset. Read from the
+    standpoint of what they take away rather than what causes them, the three share a single feature
+    this chapter takes as its starting observation: each disrupts the capacity to hold a sequence in
+    mind long enough to complete it, whether that sequence is a multi-step instruction, a short list of
+    items just presented, or the practiced routines of an entire life. The karaṇa system, this paper
+    proposes, is among the most demanding sequence-holding disciplines a human body has ever been asked
+    to sustain, and that demand is precisely why it is worth asking whether disciplined, graded exposure
+    to it could plausibly support the capacity these three conditions erode.</p>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">1.2</span> What This Chapter Is Not Claiming</h3>
+    <p>This paper does not claim that karaṇa practice cures, reverses, or halts the progression of
+    attention-deficit presentations, memory impairment, or dementia. None of the three is a condition
+    of deficient movement training that movement training simply corrects; each has its own
+    neurobiological, developmental, or degenerative basis that this paper is not equipped to adjudicate
+    and does not attempt to. What this paper does claim, cautiously and with the same restraint Part
+    Four and Part Five brought to their own existential proposals, is narrower: that a structured,
+    graded, professionally supervised movement practice built on karaṇa principles is a plausible
+    candidate for adjunctive, non-pharmacological support of attention and memory function, worth
+    testing empirically rather than dismissing or, in the opposite direction, oversold as a
+    replacement for established care.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">1.3</span> Why Movement-Based Intervention Is Already a Live Clinical Question</h3>
+    <p>This paper is not introducing a novel idea by asking whether structured movement supports cognition;
+    the clinical and rehabilitation literature already takes movement-based intervention seriously across
+    exactly the three domains this chapter addresses. Structured exercise and movement programs are an
+    established component of many attention and executive-function intervention plans; dance and
+    movement-based therapies are used, in varying forms, within cognitive rehabilitation and dementia
+    care settings; and the broader category of rhythmic, music-linked movement is a recognized, if still
+    developing, area of non-pharmacological support research. What this chapter contributes is not the
+    general claim that movement matters, which the literature already accepts in outline, but the
+    specific proposal that the karaṇa system's own particular combination of demands — precise
+    sequencing, rhythmic entrainment, graded difficulty, and corrective feedback from a trained teacher
+    — makes it an unusually well-suited candidate within that broader category, worth naming and testing
+    specifically rather than treated only as one more instance of exercise in general.</p>
+    <div class="tagrow"><span class="tag ms"><span class="dot"></span>Modern Scholarship</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">1.4</span> Method and Its Limits, Stated Once for the Whole Volume</h3>
+    <p>This volume proceeds by naming each condition's relevant clinical features as accurately and
+    conservatively as this paper is able, identifying the specific structural feature of karaṇa practice
+    that plausibly bears on those features, marking every proposed mechanism as AI Synthesis unless it
+    rests on an established finding this paper can state without fabricating specifics, and closing each
+    chapter with what would need to be tested before any of this could be treated as more than a
+    reasoned hypothesis. Where the literature offers a genuine, well-established finding, this paper
+    states it in general terms without inventing citations, sample sizes, or statistics it cannot verify;
+    where this paper is proposing its own synthesis, it says so plainly rather than dressing conjecture
+    in the language of established science.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">1.5</span> Why the Karaṇa Specifically, Rather Than Movement in General</h3>
+    <p>Three features distinguish karaṇa practice from generic physical exercise in ways this chapter
+    argues are relevant to attention and memory specifically, rather than to physical fitness alone.
+    First, each karaṇa is a precisely defined, non-arbitrary combination of a fixed stance, a
+    prescribed leg-and-foot movement, and a specific hand gesture, meaning the practitioner is not
+    moving freely but holding and executing a defined sequence, engaging sequential working memory
+    directly rather than incidentally. Second, karaṇa practice is inseparable from rhythmic
+    accompaniment, meaning the sequence must be held not in isolation but in time, engaging the
+    auditory-motor entrainment circuitry that rhythm-based interventions specifically recruit. Third,
+    karaṇa practice is corrected in real time by a trained teacher's continuous feedback, meaning the
+    practitioner's attention is held not merely by the movement itself but by an ongoing, externally
+    anchored demand to notice and adjust — a demand structure this paper argues bears directly on
+    sustained-attention capacity in a way free exercise does not automatically provide.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">1.6</span> The Order of the Three Chapters</h3>
+    <p>Attention is treated first because it is, developmentally, the earliest of the three conditions
+    typically to present and the one most directly tied to the sustained, moment-to-moment demand
+    structure karaṇa practice imposes. Working-memory impairment follows, since it shares attention's
+    concern with holding information across short intervals but adds a specific concern with sequence
+    and chunking that karaṇa's own multi-element structure — sthāna, cārī, and hasta combined — speaks
+    to directly. Dementia closes the sequence, since it is the condition in which attention and working
+    memory are both affected, together with a further, distinct concern this paper takes up on its own
+    terms: the differential preservation of procedural, body-based memory relative to declarative,
+    fact-based memory as cognitive decline progresses, a distinction with direct bearing on why a
+    practiced dancer's body may retain a karaṇa sequence longer than the same person retains a
+    conversation from the same afternoon.</p>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">1.7</span> Who This Volume Is For</h3>
+    <p>This volume is written for three overlapping audiences this project has always addressed:
+    scholars of Nāṭyaśāstra and Indian aesthetics interested in the discipline's applied reach beyond
+    performance and ritual; cognitive scientists and clinicians curious whether a specific,
+    well-documented traditional practice offers a testable intervention design rather than a vague
+    appeal to holistic wellness; and practitioners, caregivers, and families living with one of these
+    three conditions who may reasonably ask whether a structured movement practice is worth
+    discussing with their own care team. This paper addresses all three without pretending to
+    replace what only a clinician, a caregiver's own judgment, or a practitioner's own body can
+    finally supply.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">1.8</span> Why the Timing of This Volume Matters</h3>
+    <p>Interest in non-pharmacological, movement- and arts-based approaches to attention, memory, and
+    cognitive support has grown substantially across clinical and rehabilitation settings in recent
+    years, running alongside continued reliance on established pharmacological and behavioral treatment
+    rather than replacing it. This chapter situates this volume within that broader, already-occurring
+    shift, proposing karaṇa practice as one specific, historically deep, and structurally distinctive
+    candidate within a category of intervention that clinical and caregiving communities are already
+    actively exploring, rather than proposing that this volume is introducing an entirely novel idea to
+    a field not otherwise interested in movement-based approaches.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">1.9</span> A Note on Language: Ability, Not Deficit, as the Frame This Volume Tries to Hold</h3>
+    <p>Clinical vocabulary necessarily names conditions by what is affected — attention-deficit,
+    memory impairment, cognitive decline — and this volume has had to use that vocabulary to engage the
+    clinical literature honestly. This chapter states, before the volume's more technical chapters
+    begin, that this vocabulary should not be read as this paper's full picture of the individuals it
+    describes: a person living with any of these three conditions retains capacities, preferences, and
+    a full personhood this clinical framing does not capture, and this volume's proposals are offered
+    in service of supporting what a person can still do and enjoy, not as a project defined solely by
+    what a diagnosis says is missing.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+</section>
+
+<section class="panel" id="adhd">
+  <div class="panel-head">
+    <div class="kicker">II · Attention</div>
+    <h2>Sustained, Divided, and Externally-Anchored Attention in Karaṇa Practice</h2>
+    <p class="lede">Attention-deficit/hyperactivity presentations are clinically defined by difficulty
+    sustaining attention on tasks lacking intrinsic reward, by difficulty inhibiting competing impulses,
+    and, in many presentations, by a restless motor excess the clinical literature calls hyperactivity.
+    This chapter asks what karaṇa's specific attentional demand structure offers each of these three
+    features.</p>
+  </div>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">2.1</span> The Clinical Picture, Stated Conservatively</h3>
+    <p>Attention-deficit/hyperactivity presentations involve, in varying combination across individuals,
+    difficulty sustaining attention on tasks that do not themselves supply frequent, salient reward;
+    difficulty with executive inhibition of competing impulses and distractions; and, in the
+    combined and hyperactive-impulsive presentations, an excess of motor restlessness that itself
+    competes with sustained task engagement. These features are neurodevelopmental in origin and are
+    typically addressed through a combination of behavioral strategy, environmental structuring, and,
+    where clinically indicated, medication; this chapter's proposal concerns where a structured
+    movement practice might plausibly sit alongside that established combination, not in place of it.</p>
+    <div class="tagrow"><span class="tag ms"><span class="dot"></span>Modern Scholarship</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">2.2</span> Task-Intrinsic Reward and Why Karaṇa Practice Rarely Lacks It</h3>
+    <p>A central clinical observation about attention-deficit presentations is that sustained attention
+    is far easier to secure on tasks that supply their own frequent, salient reward — a video game's
+    constant feedback loop is the standard example — than on tasks whose reward is distant, abstract, or
+    slow to arrive, such as a worksheet or a lecture. Karaṇa practice, this chapter proposes, sits
+    unusually close to the reward-rich end of this spectrum for a physical, non-digital activity: each
+    attempted karaṇa yields immediate proprioceptive and visual feedback on whether the stance, movement,
+    and gesture cohered, immediate corrective input from a teacher, and a short enough execution cycle
+    that the gap between effort and feedback is measured in seconds rather than the days a written
+    assignment might require. This structural feature, this chapter argues, is worth testing directly
+    rather than assumed, since it offers a specific, falsifiable prediction: engagement and error-rate
+    on karaṇa sequences should track more closely with typical peers than engagement on tasks lacking
+    this reward structure does, if the reward-rich reading is correct.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">2.3</span> Rhythmic Entrainment as an External Attentional Anchor</h3>
+    <blockquote class="term">तालानुगमन<span class="gloss">tālānugamana — following, tracking, or moving in accordance with tāla, the rhythmic cycle</span></blockquote>
+    <p>Rhythmic auditory-motor entrainment, the well-documented tendency of movement to synchronize
+    involuntarily with a steady external beat, is a genuine and independently studied phenomenon in
+    movement science and has been applied clinically in gait rehabilitation and in some attention and
+    movement-disorder contexts, where a steady external rhythm is used to structure movement timing
+    that an affected nervous system struggles to generate internally. Karaṇa practice is danced to tāla
+    without exception; this chapter proposes that the tāla cycle functions, for a practitioner whose
+    internally generated attentional rhythm is inconsistent, as exactly this kind of external anchor —
+    supplying, from outside the practitioner's own executive system, the steady temporal structure that
+    system may otherwise struggle to sustain unaided.</p>
+    <div class="tagrow"><span class="tag ms"><span class="dot"></span>Modern Scholarship</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">2.4</span> Motor Restlessness Reframed as Structured Motor Demand</h3>
+    <p>A further clinical feature of many attention-deficit presentations is that sitting still and
+    attending are, for the affected nervous system, in direct competition — stillness itself consumes
+    inhibitory resources that would otherwise be available for the cognitive task at hand, a pattern
+    some clinicians and researchers describe as movement serving a genuine regulatory function rather
+    than merely reflecting distraction. Karaṇa practice does not ask a practitioner to suppress motor
+    output in favor of stillness; it channels motor output into a demanding, structured form that itself
+    requires sustained cognitive engagement to execute correctly. This chapter proposes that this may
+    resolve, rather than merely relocate, the competition between stillness and attention that a seated
+    academic task imposes, since the movement itself becomes the vehicle for sustained engagement
+    rather than an obstacle to it — a proposal this chapter regards as plausible rather than
+    established.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">2.5</span> Divided Attention and the Layered Demand of Sthāna, Cārī, and Hasta</h3>
+    <p>A single karaṇa requires a practitioner to hold correct lower-body stance, correct leg-and-foot
+    trajectory, and correct hand gesture simultaneously, while also tracking the tāla cycle and a
+    teacher's real-time correction — a genuinely divided-attention task in the sense the clinical and
+    cognitive literature uses that term, requiring the practitioner to allocate limited attentional
+    resources across several concurrent demands rather than a single one. This chapter proposes that
+    graded practice on this kind of layered task, beginning with simplified single-element versions and
+    progressing toward the full combination, offers a training analogue to the divided-attention and
+    working-memory tasks used in some cognitive-training research, with the specific advantage that the
+    karaṇa version embeds the training inside an intrinsically engaging, socially supported, physically
+    active practice rather than a repetitive computerized drill.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">2.6</span> A Comparison With Existing Movement-Based Attention Interventions</h3>
+    <p>Structured physical activity, and specifically activity combining movement with rhythm, sequence,
+    and social coordination, already appears within the broader landscape of non-pharmacological
+    supports considered for attention-deficit presentations, alongside behavioral strategy and,
+    where indicated, medication; martial arts, structured dance, and coordinated team sport are among
+    the movement-based activities most often discussed in this context, generally on the reasoning that
+    they combine physical engagement with externally imposed structure and sequence in ways unstructured
+    physical activity does not automatically provide. Karaṇa practice, on the account this chapter has
+    developed, shares this combination of features and adds the specific reward-rich, teacher-corrected,
+    rhythmically anchored structure Sections 2.2 through 2.5 described, making it a plausible addition
+    to this existing category of movement-based support rather than a wholly novel proposal standing
+    outside it.</p>
+    <div class="tagrow"><span class="tag ms"><span class="dot"></span>Modern Scholarship</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">2.7</span> Inattentive, Hyperactive-Impulsive, and Combined Presentations Considered Separately</h3>
+    <p>Clinical presentations of attention-deficit conditions are not uniform; the primarily inattentive
+    presentation, marked more by difficulty sustaining focus and organizing tasks than by overt motor
+    restlessness, differs meaningfully from the primarily hyperactive-impulsive presentation, and the
+    combined presentation differs from both. This chapter's proposal in Section 2.4, concerning motor
+    restlessness channeled into structured demand, speaks most directly to the hyperactive-impulsive and
+    combined presentations; for the primarily inattentive presentation, the more relevant proposals are
+    those of Sections 2.2 and 2.3, concerning task-intrinsic reward and external rhythmic anchoring,
+    since this presentation's central difficulty is less about excess motor output than about
+    sustaining engagement and organizing sequential steps without external structure. A responsible
+    implementation of karaṇa practice for attention-deficit presentations should therefore be calibrated
+    to which presentation a given individual has, rather than applied uniformly on the assumption that
+    all three present the same underlying need.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">2.8</span> Comorbid Motor Coordination Difficulty and Anxiety</h3>
+    <p>Attention-deficit presentations frequently co-occur with difficulties in motor coordination and
+    with elevated anxiety, both of which bear directly on how karaṇa practice should be introduced. For
+    an individual with co-occurring coordination difficulty, the demanding precision of full karaṇa
+    execution may itself become a source of frustration rather than reward if introduced too quickly,
+    making an even more conservative pace through Chapter Six's graded implementation especially
+    important, with more time spent at the isolated single-element stage before combination is
+    attempted. For an individual with co-occurring anxiety, the real-time correction central to
+    karaṇa pedagogy needs particular care in delivery, since correction experienced as criticism rather
+    than guidance risks compounding anxiety rather than building the confidence Section 2.2 proposed the
+    practice's reward structure could offer; a teacher working with this comorbidity should be
+    especially attentive to framing correction as collaborative refinement rather than as identification
+    of failure.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">2.9</span> Developmental Timing: Why Earlier Introduction May Matter More Than for Adults</h3>
+    <p>Attention-deficit presentations are most often identified in childhood, a period during which the
+    neural circuits this volume's mechanism chapter identifies as relevant to sequence learning and
+    attentional control are themselves still developing and, by the general principle of developmental
+    neuroplasticity, may be more responsive to sustained training than the same circuits in adulthood.
+    This chapter proposes, cautiously, that introducing karaṇa practice during childhood may therefore
+    carry a developmental advantage beyond whatever benefit the same practice would offer if introduced
+    for the first time in adulthood, though this chapter is not aware of research directly comparing
+    developmental timing of dance-based intervention for attention-deficit presentations specifically,
+    and treats the proposal as a plausible extension of general developmental neuroscience rather than a
+    documented finding.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">2.10</span> School and Home Settings: Where Karaṇa Practice Might Realistically Fit</h3>
+    <p>This chapter's proposals are only useful if they can be realistically situated within the settings
+    where children and adults with attention-deficit presentations actually spend their time. For
+    school-age children, this chapter proposes karaṇa-based movement breaks are more realistically
+    introduced as a supplementary after-school or community arts program than as a classroom
+    intervention requiring specialized teacher training most schools do not have readily available,
+    though brief, simplified rhythmic movement elements adapted from karaṇa vocabulary could plausibly
+    be incorporated into classroom movement-break routines with appropriate teacher training. For
+    adults, this chapter proposes community-based adult karaṇa classes, already a feature of the
+    cultural landscape this series documents, as a natural and already-existing setting requiring no
+    novel institutional infrastructure to make available.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">2.11</span> What a Family Should Reasonably Expect, and Not Expect</h3>
+    <p>This chapter closes its specific proposals with a plain statement addressed to families
+    considering karaṇa practice for a child or adult with an attention-deficit presentation: a
+    reasonable expectation is a structured, engaging, socially supported activity that this chapter's
+    reasoning suggests may plausibly support attention and self-regulation over a sustained course of
+    practice, delivered by a qualified teacher attentive to the individual's specific needs. An
+    unreasonable expectation is that this practice alone will resolve the presentation's underlying
+    neurodevelopmental basis or substitute for behavioral strategy, environmental support, or medication
+    where a clinician has determined these are indicated; this chapter asks families to hold the first
+    expectation and set aside the second.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">2.12</span> A Provisional Reading of Karaṇa Practice and Attention</h3>
+    <p>This chapter's provisional reading holds that karaṇa practice's reward-rich feedback cycle,
+    rhythmic external anchoring, channeling of motor output into structured rather than suppressed form,
+    and graded divided-attention demand together make it a plausible candidate for supervised,
+    adjunctive support of attention regulation in attention-deficit presentations — a candidate worth
+    the specific empirical testing Chapter Five of this volume outlines, and one that in no case should
+    be read as a substitute for established behavioral or medical care, but as a possible complement to
+    it, best pursued with a practitioner's clinician informed and involved.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+</section>
+
+<section class="panel" id="memory">
+  <div class="panel-head">
+    <div class="kicker">III · Working Memory</div>
+    <h2>Sequencing, Chunking, and Procedural Encoding in Short-Term Memory Impairment</h2>
+    <p class="lede">Short-term and working-memory impairment — whether developmental, acquired through
+    injury, or an early feature of later cognitive decline — is defined by difficulty holding a small
+    amount of information active across the seconds needed to use it. This chapter asks what the
+    karaṇa system's own internal structure, built from the ground up around exactly this kind of
+    holding, has to offer.</p>
+  </div>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">3.1</span> The Clinical Picture, Stated Conservatively</h3>
+    <p>Working memory, in cognitive-science usage, names the capacity to hold and manipulate a small
+    amount of information across a short interval in service of an immediate task — remembering a
+    sequence of instructions long enough to carry them out, or a short list of items long enough to use
+    them. Impairment to this capacity can arise developmentally, following acquired brain injury, or as
+    an early feature of progressive cognitive decline, and typically presents as difficulty following
+    multi-step instructions, frequent loss of place within a sequence, and reliance on external supports
+    such as written lists or repeated verbal cues. This chapter's proposal concerns whether a practice
+    built around holding multi-element sequences offers a plausible, trainable analogue to this
+    capacity, not whether it addresses the impairment's underlying cause.</p>
+    <div class="tagrow"><span class="tag ms"><span class="dot"></span>Modern Scholarship</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">3.2</span> Chunking as the Karaṇa's Native Structure</h3>
+    <blockquote class="term">स्थान-चारी-हस्त<span class="gloss">sthāna-cārī-hasta — stance, movement-path, and hand gesture, the three elements combined in a single karaṇa</span></blockquote>
+    <p>Cognitive-science research on working memory has long established chunking — the grouping of
+    several individual items into a single, more memorable higher-order unit — as one of the most
+    effective strategies for expanding what a limited working-memory capacity can hold; a phone number
+    recalled as three chunks is easier to retain than the same digits recalled as ten separate items.
+    A single karaṇa is already, on the Nāṭyaśāstra's own classical definition, a chunked unit in exactly
+    this sense: three elements, sthāna, cārī, and hasta, that a trained practitioner learns to execute
+    and recall as one integrated whole rather than three separate instructions held in parallel. This
+    chapter proposes that karaṇa training is, in effect, applied chunking practice, offering a
+    practitioner repeated, embodied experience of converting several discrete demands into a single
+    retrievable unit — a skill this chapter proposes may transfer, at least partially, to other
+    sequential tasks a working-memory-impaired individual faces outside the practice room.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">3.3</span> Procedural Memory as a Distinct, Often Better-Preserved System</h3>
+    <p>Memory research distinguishes several systems operating somewhat independently in the brain,
+    among them declarative memory, for facts and events, and procedural memory, for learned motor
+    skills and sequences; a substantial body of clinical and neuropsychological literature has
+    documented that procedural memory can remain relatively better preserved than declarative memory
+    across a range of conditions affecting memory, including in some presentations of amnesia and
+    progressive cognitive decline. Karaṇa sequences, once genuinely learned into the body through
+    the kind of extended repetition Part Four's seventh chapter described as productive of
+    kriyā-jñāna, are encoded substantially within this procedural system. This chapter proposes that
+    for an individual whose declarative working memory is impaired but whose procedural learning
+    capacity remains relatively intact, karaṇa training offers a route to reliable, retrievable
+    sequence-memory that does not depend on the declarative system the individual's condition most
+    directly affects.</p>
+    <div class="tagrow"><span class="tag ms"><span class="dot"></span>Modern Scholarship</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">3.4</span> Graded Sequence Length as a Trainable Ladder</h3>
+    <p>Karaṇa pedagogy, as this series has documented from Part One onward, is inherently graded: a
+    learner begins with isolated sthāna and cārī elements, proceeds to simple two-element combinations,
+    and only later attempts the full three-element karaṇa and multi-karaṇa sequences called
+    aṅgahāra. This chapter proposes that this graded structure maps directly onto the standard
+    clinical and educational approach to working-memory rehabilitation, which likewise proceeds by
+    incrementally increasing the length and complexity of a sequence a person is asked to hold, only
+    advancing once a shorter sequence is reliably mastered. Karaṇa training, on this reading, supplies
+    an already-built, centuries-refined graded ladder of exactly this kind, embedded in a socially
+    engaging, physically active practice rather than an isolated drill.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">3.5</span> Multimodal Encoding: Why More Channels May Mean Sturdier Memory</h3>
+    <p>A karaṇa sequence is never encoded through a single sensory channel alone; it is learned
+    simultaneously through visual observation of a teacher's demonstration, verbal instruction and
+    rhythmic counting, and the practitioner's own proprioceptive and kinesthetic experience of executing
+    the movement. Memory research has generally found that information encoded through multiple,
+    mutually reinforcing channels tends to be more robustly retained and more easily retrieved than
+    information encoded through a single channel, since a retrieval cue from any one channel can
+    activate the associated memory trace. This chapter proposes that karaṇa training's inherently
+    multimodal encoding may offer working-memory-impaired learners a more resilient form of sequence
+    memory than single-channel verbal instruction alone would provide, though this chapter treats the
+    proposal as a hypothesis for testing rather than an established clinical finding specific to karaṇa
+    practice.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">3.6</span> A Comparison With Errorless Learning in Memory Rehabilitation</h3>
+    <p>Errorless learning, an established approach in memory rehabilitation, minimizes a learner's
+    exposure to their own mistakes during acquisition, on the reasoning that an impaired memory system
+    may retain an erroneous attempt as readily as a correct one, making error-prone trial-and-error
+    learning counterproductive for some memory-impaired populations. Karaṇa pedagogy's traditional
+    method of continuous, real-time teacher correction functions, on this comparison, as a naturally
+    occurring approximation of errorless learning: a learner rarely completes many repetitions of an
+    incorrect movement before a teacher intervenes, keeping the proportion of erroneous encoding low
+    relative to unsupervised trial-and-error practice. This comparison suggests karaṇa training's
+    traditional pedagogical structure may already embody, for reasons unrelated to modern memory
+    rehabilitation theory, a feature that theory independently recommends.</p>
+    <div class="tagrow"><span class="tag ms"><span class="dot"></span>Modern Scholarship</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">3.7</span> Verbal Versus Visuospatial Working Memory, and Where Karaṇa Practice Sits</h3>
+    <p>Working-memory research generally distinguishes a verbal-phonological component, responsible for
+    holding spoken or subvocalized sequences, from a visuospatial component, responsible for holding
+    spatial and visual information, alongside a central executive coordinating both. Karaṇa learning, as
+    this chapter has described it, draws on both components simultaneously: the sequence is often
+    counted or named aloud, engaging verbal working memory, while the stance, path, and gesture must be
+    held as spatial and visual information, engaging visuospatial working memory. This chapter proposes
+    that this dual engagement may make karaṇa training a broader working-memory exercise than
+    interventions targeting only one component, though it also means an individual with a pronounced
+    weakness in one component specifically, rather than working memory generally, may need the
+    corresponding element of practice — spoken counting, or visual-spatial demonstration — deliberately
+    emphasized to address that particular weakness.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">3.8</span> Acquired Versus Developmental Working-Memory Impairment</h3>
+    <p>Working-memory impairment arising from acquired brain injury differs in important respects from
+    impairment present from early development: an individual with acquired impairment often retains
+    intact prior procedural learning and general life experience to draw on, while an individual with
+    developmental impairment is building both the impaired capacity and its compensatory strategies for
+    the first time. This chapter proposes that karaṇa training for an acquired-impairment population may
+    reasonably proceed somewhat faster through the graded ladder described in Section 3.4, drawing on the
+    individual's prior general motor learning experience, while a developmental population may need a
+    slower, more foundational progression starting from simpler movement vocabulary before karaṇa
+    elements specifically are introduced. Both populations, this chapter emphasizes, should have their
+    specific rehabilitation or educational plan, set by their own treating professionals, take clear
+    precedence over this volume's general proposal.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">3.9</span> The Limits of Transfer: What Karaṇa Training Is Unlikely to Fix on Its Own</h3>
+    <p>This chapter has proposed throughout that karaṇa training plausibly builds sequence-holding
+    capacity with some prospect of transfer to other sequential tasks; it is equally important to state
+    what this proposal does not promise. Working memory as measured in standard cognitive tasks is only
+    one contributor to the everyday difficulties working-memory impairment produces, alongside factors
+    such as processing speed, attention, and the specific demands of a person's daily environment;
+    improvement in karaṇa-specific sequence memory, even if genuinely achieved, should not be expected
+    to resolve every practical difficulty a working-memory-impaired individual faces in daily life, and
+    this chapter is careful not to suggest otherwise.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">3.10</span> Duration and Frequency: What Graded Practice Actually Requires Over Time</h3>
+    <p>This chapter's proposals imply a practical question about duration rarely addressed directly:
+    how long a graded karaṇa sequence-training course would need to run before working-memory transfer,
+    if it occurs at all, could reasonably be expected to appear. Cognitive-training research generally
+    suggests that meaningful, lasting change in a trained capacity requires sustained practice over
+    weeks to months rather than days, with gains typically consolidating gradually rather than
+    appearing immediately after a small number of sessions. This chapter proposes that a realistic
+    course of karaṇa-based working-memory support should be planned and evaluated over a comparable
+    multi-month horizon, and that families, caregivers, and clinicians should be advised accordingly
+    rather than led to expect rapid results within the first few sessions.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">3.11</span> Integrating Karaṇa Practice With Existing Speech, Occupational, or Cognitive Therapy</h3>
+    <p>Individuals with working-memory impairment are frequently already engaged with speech-language,
+    occupational, or cognitive rehabilitation therapy addressing overlapping goals through different
+    means. This chapter proposes that karaṇa-based practice is best introduced in coordination with
+    these existing therapies rather than alongside them without communication, so that a treating
+    therapist can align the specific sequences and chunking strategies used in karaṇa sessions with the
+    strategies already being taught in therapy, reinforcing a single consistent approach rather than
+    introducing a parallel and potentially inconsistent one.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">3.12</span> A Provisional Reading of Karaṇa Practice and Working Memory</h3>
+    <p>This chapter's provisional reading holds that karaṇa training's native chunked structure,
+    its reliance on relatively preserved procedural memory, its graded sequence-length pedagogy, its
+    multimodal encoding, and its traditional near-errorless correction method together make it a
+    plausible candidate for supervised, adjunctive support of sequence-holding capacity in individuals
+    with short-term or working-memory impairment — always as a complement to, and never a replacement
+    for, the specific rehabilitative, educational, or medical plan a qualified professional has
+    designed for that individual.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+</section>
+
+<section class="panel" id="dementia">
+  <div class="panel-head">
+    <div class="kicker">IV · Dementia</div>
+    <h2>Procedural Preservation, Rhythm, and Cognitive Reserve Across the Stages</h2>
+    <p class="lede">Dementia is not a single condition but a family of progressive syndromes with
+    different underlying causes and courses, unified clinically by a progressive decline in memory and
+    other cognitive functions sufficient to interfere with daily life. This chapter treats mild,
+    moderate, and advanced stages separately, since what a movement practice can plausibly offer
+    changes considerably across them.</p>
+  </div>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">4.1</span> The Clinical Picture, Stated Conservatively, Across Three Stages</h3>
+    <p>Mild-stage dementia, including the mild cognitive impairment that often precedes a formal
+    diagnosis, typically involves noticeable difficulty with recent memory and complex tasks while
+    substantial independence is retained. Moderate-stage dementia typically involves greater difficulty
+    with recent memory, disorientation to time or place, and a growing need for support with daily
+    tasks, while long-established skills and long-term memories often remain more accessible than recent
+    ones. Advanced-stage dementia typically involves severe memory loss, substantial dependence on
+    caregivers for daily functioning, and, in many cases, increasing difficulty with verbal
+    communication, though responsiveness to music, rhythm, and touch is frequently reported by
+    caregivers and clinicians even at this stage. This chapter's proposals are calibrated separately to
+    each of these three stages rather than treated as a single undifferentiated claim.</p>
+    <div class="tagrow"><span class="tag ms"><span class="dot"></span>Modern Scholarship</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">4.2</span> Cognitive Reserve and the Case for Early Engagement</h3>
+    <p>Cognitive reserve is an established concept in dementia research describing the brain's capacity
+    to sustain function despite accumulating pathology, built up over a lifetime through education,
+    occupational complexity, social engagement, and, in a growing body of research, sustained
+    engagement in cognitively and physically demanding activity, of which structured dance and
+    complex movement learning are recognized examples. This chapter proposes that sustained karaṇa
+    practice, undertaken well before any cognitive decline becomes apparent, plausibly contributes to
+    cognitive reserve in the same general way other demanding, sustained, sequence-based
+    activities are understood to, given its combination of physical exertion, complex sequence
+    learning, rhythmic engagement, and sustained social and pedagogical interaction — a combination the
+    reserve literature associates with reserve-building activity in general, even where karaṇa practice
+    specifically has not itself been studied.</p>
+    <div class="tagrow"><span class="tag ms"><span class="dot"></span>Modern Scholarship</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">4.3</span> Mild Stage: Consolidating What Chapter Three Proposed</h3>
+    <p>At the mild stage, this chapter's proposal draws directly on Chapter Three's account of
+    procedural memory and graded sequence training: a person newly experiencing difficulty with recent
+    declarative memory may still be well placed to learn, retain, and enjoy new karaṇa sequences,
+    since procedural learning capacity is frequently among the more resilient cognitive functions
+    early in the course of decline. Continued engagement at this stage plausibly serves two purposes
+    at once: providing continued reserve-building activity of the kind Section 4.2 described, and
+    offering the individual a domain of continued mastery and success at a stage when other domains of
+    daily function may already be growing more effortful.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">4.4</span> Moderate Stage: Long-Established Sequences Over New Learning</h3>
+    <p>At the moderate stage, this chapter's proposal shifts emphasis from acquiring new karaṇa sequences
+    toward revisiting sequences learned earlier in life, particularly for individuals with a personal
+    history of dance training. Long-established procedural memories are, in the general dementia-care
+    literature, frequently reported as more durable than recently formed ones, consistent with the
+    broader clinical pattern in which distant memories often remain more accessible than recent ones as
+    decline progresses. For an individual with a dance background, this chapter proposes that
+    caregiver-supported re-engagement with familiar, long-practiced karaṇa sequences may function less
+    as new cognitive training and more as a route to continuity of identity and a source of accessible,
+    embodied pleasure and confidence at a stage when many other capacities are becoming less reliable.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">4.5</span> Advanced Stage: Rhythm and Touch Where Sequence Recall Has Receded</h3>
+    <p>At the advanced stage, this chapter does not propose that a person can still learn or reliably
+    execute a full karaṇa sequence; expecting this would be an unrealistic and potentially distressing
+    standard to hold a person to. What the dementia-care literature does document, and what caregivers
+    frequently report independently, is that responsiveness to music, rhythm, and gentle guided touch
+    or movement can persist even when verbal communication and sequence recall have substantially
+    receded. This chapter's proposal at this stage is accordingly modest and different in kind from
+    the earlier two: not karaṇa practice as sequence-training, but the tāla rhythm and the gentle,
+    guided, caregiver-assisted gesture of a hasta or a simple sthāna as a source of sensory comfort,
+    rhythmic grounding, and relational connection between the person and a caregiver, valuable in its
+    own right independent of any cognitive-training claim.</p>
+    <div class="tagrow"><span class="tag ms"><span class="dot"></span>Modern Scholarship</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">4.6</span> A Comparison With Music Therapy in Dementia Care</h3>
+    <p>Music therapy is among the most established non-pharmacological approaches in dementia care, with
+    a substantial body of clinical and caregiver observation supporting the finding that musical
+    engagement, and particularly music with personal or lifelong familiarity, can reduce agitation,
+    support mood, and evoke recognizable responsiveness even at advanced stages when other forms of
+    engagement no longer reliably do so. Karaṇa practice's inseparability from rhythmic and often vocal
+    musical accompaniment places it naturally within this same broader category; this chapter proposes
+    that the movement component adds a further, embodied dimension of engagement beyond music therapy's
+    primarily auditory one, particularly relevant for individuals with a personal history of dance,
+    while acknowledging that this specific combination has not itself been the subject of dedicated
+    clinical study and remains, at this point, this chapter's own proposed extension of an established
+    adjacent practice.</p>
+    <div class="tagrow"><span class="tag ms"><span class="dot"></span>Modern Scholarship</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">4.7</span> Dementia Subtypes: Why "Dementia" Is Not One Condition</h3>
+    <p>This chapter has so far treated dementia by stage rather than by underlying cause, and this
+    section states why that choice needs a caveat. Alzheimer's disease, the most common cause of
+    dementia, typically presents with prominent early memory difficulty of the kind this chapter has
+    centrally addressed. Vascular dementia, arising from cerebrovascular changes, often presents with a
+    more stepwise course and prominent difficulty with processing speed and executive function
+    alongside memory. Lewy body dementia often involves prominent fluctuations in alertness, visual
+    hallucinations, and motor features overlapping with Parkinsonian movement difficulty, which has
+    direct relevance to this volume's movement-based proposal and requires particular care around
+    fall risk and motor fluctuation in session design. Frontotemporal dementia often affects behavior,
+    judgment, and language before it affects memory in the way Alzheimer's disease typically does. This
+    chapter's proposals, framed primarily around memory and stage, apply most directly to
+    Alzheimer's-type presentations and should be adapted by a qualified professional's judgment for
+    other subtypes, particularly Lewy body dementia, where movement-based activity requires specific
+    attention to motor fluctuation and fall risk beyond what this chapter has separately addressed.</p>
+    <div class="tagrow"><span class="tag ms"><span class="dot"></span>Modern Scholarship</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">4.8</span> Fall Risk and Physical Safety in Movement-Based Dementia Care</h3>
+    <div class="callout safety">
+      <div class="lbl">Safety Note</div>
+      <p>Dementia, across most subtypes and particularly as it progresses, is associated with increased
+      fall risk arising from a combination of cognitive, visual-perceptual, and motor factors. Any
+      movement-based activity for this population, including the gentle, seated, or caregiver-supported
+      gesture work Section 4.5 described, should be designed with this risk explicitly in view: seated
+      or well-supported positions preferred over standing where balance is a concern, a caregiver or
+      aide present throughout rather than only at the session's start, and any standing or stepping
+      element cleared in advance with the individual's physician or physical therapist rather than
+      introduced on the movement teacher's judgment alone.</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">4.9</span> Caregiver Wellbeing as Part of the Same Picture</h3>
+    <p>This chapter has focused on the individual living with dementia, but a caregiver-assisted practice
+    of the kind Section 4.5 described directly involves the caregiver's own time, energy, and emotional
+    experience as well. This chapter proposes that shared rhythmic and gestural engagement of this kind
+    may offer caregivers, alongside the individual they support, a structured, positive shared activity
+    at a stage of the illness when many other shared activities have become more difficult, though this
+    chapter is careful not to suggest this as an obligation added to an already demanding caregiving
+    role, and emphasizes that any such practice should be adopted only if it is genuinely sustainable and
+    welcome for the caregiver as well as the individual.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">4.10</span> Early Diagnosis and the Case for Starting Before Symptoms Interfere With Daily Life</h3>
+    <p>Mild cognitive impairment, often a precursor to but not inevitably progressing to dementia,
+    represents the earliest realistic window for the kind of engagement this chapter has proposed. This
+    chapter proposes that an individual receiving this earlier diagnosis, while independence and
+    learning capacity remain largely intact, is well placed to begin or resume karaṇa practice under
+    Section 4.3's mild-stage approach, both for whatever reserve-related and procedural-memory benefit
+    this volume has proposed and for the simple, immediate value of a meaningful, socially engaged
+    activity at a stage when a person is often still processing a new and difficult diagnosis
+    emotionally as well as cognitively.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">4.11</span> Coordinating With Residential and Day-Care Settings</h3>
+    <p>Many individuals at the moderate and advanced stages this chapter has addressed live in
+    residential aged-care or attend structured day-care settings rather than remaining exclusively in a
+    family home, and this chapter proposes that karaṇa-based engagement, where introduced in such
+    settings, be coordinated directly with facility staff and the individual's care plan, with staff
+    given basic training in the gentle, gestural, non-sequence-dependent approach Section 4.5 described,
+    so that brief moments of rhythmic or gestural engagement can be offered by trained staff as part of
+    routine care rather than depending on the periodic visit of an outside specialist alone.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">4.12</span> A Provisional Reading of Karaṇa Practice and Dementia</h3>
+    <p>This chapter's provisional reading holds that karaṇa practice's plausible contribution to
+    cognitive reserve makes early, sustained engagement worth considering well before decline becomes
+    apparent; that continued or resumed practice at the mild and moderate stages plausibly supports
+    procedural mastery, identity continuity, and accessible success; and that at the advanced stage,
+    the practice's rhythmic and gestural elements, delivered gently and without expectation of sequence
+    recall, plausibly offer comfort and relational connection alongside, never instead of, the medical
+    and caregiving support the individual's stage of decline requires.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+</section>
+
+<section class="panel" id="mechanism">
+  <div class="panel-head">
+    <div class="kicker">V · Mechanism</div>
+    <h2>Neuroplasticity, Circuitry, and Why Movement Might Plausibly Matter</h2>
+    <p class="lede">Chapters Two through Four proposed that karaṇa practice bears on attention, working
+    memory, and dementia through specific structural features of the practice itself. This chapter asks
+    what is known, in general neuroscientific terms, about why sustained, structured, rhythmic movement
+    might plausibly act on the brain systems those three conditions affect — stated at the level of
+    established general principle, not as a specific, karaṇa-tested mechanism.</p>
+  </div>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">5.1</span> Neuroplasticity as the General Principle Underlying Every Proposal in This Volume</h3>
+    <p>Neuroplasticity, the brain's capacity to reorganize its structure and function in response to
+    experience, learning, and practice, is a well-established general principle in neuroscience,
+    documented across development, skill learning, injury recovery, and aging. Every proposal this
+    volume has made rests on this single general principle: that sustained, effortful, repeated
+    engagement with a demanding task can produce measurable changes in the neural circuits supporting
+    that task, and that this capacity, while it diminishes somewhat with age and with certain
+    pathologies, does not vanish entirely across the lifespan. This chapter states this principle
+    plainly because it is the foundation the more specific proposals of this volume are built on, and
+    because it is genuinely established, not this paper's own conjecture.</p>
+    <div class="tagrow"><span class="tag ms"><span class="dot"></span>Modern Scholarship</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">5.2</span> Basal Ganglia and Cerebellar Circuits in Sequence Learning</h3>
+    <p>Motor sequence learning of the kind karaṇa training centrally involves is understood, in
+    established motor-neuroscience literature, to engage cortico-basal-ganglia-cerebellar circuits
+    that support the gradual conversion of a consciously attended, effortful sequence into a more
+    automatic, fluently executed one as practice accumulates — the general neural basis of what this
+    series has elsewhere called, in the tradition's own vocabulary, the passage from external imposition
+    toward svātantrya. These same circuits are implicated, to varying degrees, in several of the
+    conditions this volume addresses: basal ganglia and frontostriatal circuit function is an active
+    area of attention-deficit research, and cerebellar and basal ganglia contributions to procedural
+    memory are part of why procedural learning can remain relatively preserved in conditions primarily
+    affecting other memory systems. This chapter proposes that karaṇa's demanding sequence-learning
+    structure plausibly engages and exercises these same circuits directly, though this chapter is not
+    aware of neuroimaging research specific to karaṇa or comparable Indian classical dance practice
+    that would confirm this engagement directly, and states this as a plausible extrapolation rather
+    than a documented finding.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">5.3</span> Auditory-Motor Entrainment and Rhythm-Based Rehabilitation</h3>
+    <p>Rhythmic auditory-motor entrainment is genuinely well documented in movement neuroscience and has
+    a real clinical application in techniques such as rhythmic auditory stimulation, used to support
+    gait training in movement disorders by supplying an external, steady auditory cue that helps
+    organize movement timing a person's own internal timing systems may struggle to generate reliably.
+    This general mechanism, this chapter proposes, plausibly extends to the tāla-anchored structure of
+    karaṇa practice discussed in Chapter Two, offering a further, independently grounded reason to
+    expect rhythmic movement practice to bear on attention and movement organization beyond the more
+    speculative proposals of earlier chapters.</p>
+    <div class="tagrow"><span class="tag ms"><span class="dot"></span>Modern Scholarship</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">5.4</span> Mastery, Reward Circuitry, and Sustained Engagement</h3>
+    <p>Dopaminergic reward circuitry, well established in neuroscience as central to motivation and
+    sustained engagement with a task, responds robustly to clear, frequent signals of progress and
+    mastery, a pattern relevant to Chapter Two's proposal about task-intrinsic reward in
+    attention-deficit presentations. Karaṇa training's graded structure, in which a learner moves
+    through clearly marked stages of increasing mastery with regular corrective feedback, plausibly
+    supplies exactly this kind of frequent, legible progress signal, offering a neurochemical account
+    of why the chapter proposed karaṇa training as unusually well suited to sustaining engagement in a
+    population for whom sustained engagement with less reward-rich tasks is characteristically
+    difficult.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">5.5</span> Multimodal Integration and the Hippocampal-Cortical Memory System</h3>
+    <p>The general principle that memories encoded through richer, multimodal sensory experience tend to
+    be more robustly consolidated and more flexibly retrievable is well supported in memory
+    neuroscience, reflecting the broader integrative role the hippocampus and associated cortical
+    networks play in binding information from different sensory streams into a single retrievable
+    memory trace. This general principle underlies Chapter Three's proposal about karaṇa training's
+    multimodal encoding, and this chapter treats it as a genuinely established piece of background
+    neuroscience supporting, though not specifically confirming, that particular proposal.</p>
+    <div class="tagrow"><span class="tag ms"><span class="dot"></span>Modern Scholarship</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">5.6</span> A Comparison With Dance Movement Therapy's Own Evidence Base</h3>
+    <p>Dance movement therapy is an established allied-health discipline with its own accumulating
+    evidence base addressing mood, motor function, and, in some populations, cognitive outcomes,
+    including work with older adults and individuals experiencing cognitive decline; well-known
+    community programs applying structured dance to movement-disorder populations have also
+    demonstrated that culturally specific dance forms can be adapted for populations with
+    neurological conditions without losing their essential structure. This chapter's proposals
+    throughout this volume sit within this same general evidence tradition rather than outside it,
+    proposing karaṇa practice as a specific, culturally rooted instance of a broader category —
+    structured, rhythmic, sequence-based dance practice — whose general therapeutic relevance is
+    already taken seriously in allied health, while acknowledging candidly that karaṇa practice itself
+    has not been the direct subject of the clinical research this comparison draws on.</p>
+    <div class="tagrow"><span class="tag ms"><span class="dot"></span>Modern Scholarship</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">5.7</span> Neurotrophic Support and Sustained Physical Practice</h3>
+    <p>Sustained aerobic and coordinated physical activity is well established in neuroscience to
+    increase circulating levels of brain-derived neurotrophic factor and related neurotrophic signaling,
+    molecules supporting neuronal survival, synaptic plasticity, and, in some research, hippocampal
+    structural change relevant to memory function. Karaṇa practice, particularly in its fuller,
+    physically demanding forms, plausibly qualifies as sustained physical activity of the general kind
+    associated with this neurotrophic effect, offering this volume's proposals a further general
+    physiological pathway beyond the sequence-specific and rhythm-specific mechanisms Sections 5.2
+    and 5.3 described, though again as a general property of sustained physical activity rather than a
+    finding demonstrated for karaṇa practice specifically.</p>
+    <div class="tagrow"><span class="tag ms"><span class="dot"></span>Modern Scholarship</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">5.8</span> Default Mode Network Regulation and Sustained Task Focus</h3>
+    <p>The default mode network, a set of brain regions more active during rest and mind-wandering than
+    during focused external task engagement, is understood in attention research to be relevant to
+    attention-deficit presentations, some evidence suggesting less effective suppression of default
+    mode activity during tasks requiring sustained external focus. Karaṇa practice's continuously
+    demanding, externally cued, teacher-corrected structure, requiring near-constant attention to
+    stance, path, gesture, rhythm, and correction simultaneously, plausibly leaves little cognitive
+    room for the kind of internally directed mind-wandering associated with default mode activity,
+    offering a further candidate mechanism, alongside Section 5.4's reward-circuitry account, for why
+    the practice's specific structure of continuous, multi-element demand may support sustained
+    attention beyond what a less continuously demanding activity would.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">5.9</span> The Honest Limits of Extrapolation From General Neuroscience</h3>
+    <p>Every mechanism this chapter has proposed is drawn from neuroscience established in other
+    contexts and extrapolated, by this paper's own reasoning, to karaṇa practice specifically. This
+    extrapolation is a reasonable basis for proposing testable hypotheses; it is not equivalent to
+    direct evidence that karaṇa practice itself produces these effects, at the magnitude or reliability
+    that would be needed for clinical recommendation. This chapter states this limit plainly, once more,
+    because the gap between plausible mechanism and demonstrated clinical effect is exactly the gap
+    Chapter Seven's proposed studies are designed to close, and no amount of mechanistic plausibility on
+    its own closes it.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">5.10</span> Individual Variation in Neural Response to Training</h3>
+    <p>General neuroscience establishes that individuals vary considerably in how readily a given
+    training regimen produces measurable neural or cognitive change, reflecting differences in baseline
+    capacity, genetics, age, and the specific nature of an individual's underlying condition. This
+    chapter states plainly that the mechanisms proposed in this chapter should be expected to produce
+    variable, not uniform, results across individuals within any of this volume's three target
+    populations, and that a given individual's lack of measurable benefit from a course of karaṇa
+    practice would not, on its own, contradict this chapter's general mechanistic proposal, any more
+    than one individual's strong response would confirm it definitively.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">5.11</span> Dose-Response Considerations: How Much Practice Is Enough</h3>
+    <p>Established exercise and cognitive-training research generally finds a dose-response relationship,
+    in which greater frequency, duration, and intensity of training produce larger effects up to a
+    point of diminishing return, alongside a floor below which too little practice produces no
+    detectable effect at all. This chapter proposes that karaṇa-based intervention likely follows a
+    similar pattern, meaning the session frequency and duration proposed in Chapter Six should be
+    understood as a reasoned starting estimate rather than an empirically established optimal dose, and
+    that determining the actual dose-response relationship for this specific practice is itself among
+    the empirical questions Chapter Seven's proposed studies would need to address.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">5.12</span> Measurement Approaches That Could Make These Mechanisms Testable</h3>
+    <p>Several established, non-invasive measurement approaches could plausibly be applied to test the
+    mechanisms this chapter has proposed: standard neuropsychological batteries measuring attention,
+    working memory, and executive function before and after a course of karaṇa training; wearable or
+    laboratory-based movement analysis measuring the biomechanical precision and consistency Part One
+    of this series established as central to karaṇa execution, tracked over a training course as an
+    index of motor sequence learning; and, where resources and appropriate ethical approval allow,
+    functional neuroimaging or electroencephalography measuring the specific circuit engagement Section
+    5.2 proposed. This chapter names these approaches to make clear that testing its proposals would not
+    require novel or exotic methodology, only the disciplined application of existing tools to a
+    population and practice not yet studied together.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">5.13</span> A Provisional Statement of Mechanism</h3>
+    <p>This chapter's provisional statement holds that karaṇa practice's plausible bearing on attention,
+    working memory, and dementia rests on general, independently well-established neuroscientific
+    principles — neuroplasticity, sequence-learning circuitry, auditory-motor entrainment, reward-driven
+    engagement, and multimodal memory consolidation — applied to a specific practice whose own direct
+    clinical study remains, at the time of this writing, largely still to be undertaken. The mechanism
+    is plausible precisely because each of its component parts is separately well established; what
+    remains genuinely open, and what Chapter Six turns to directly, is whether karaṇa practice
+    specifically, rather than structured movement in general, produces effects large enough and
+    reliable enough to matter clinically.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+</section>
+
+<section class="panel" id="implementation">
+  <div class="panel-head">
+    <div class="kicker">VI · Practice Design</div>
+    <h2>Adapting Karaṇa Practice Safely Across the Three Populations</h2>
+    <p class="lede">A plausible mechanism, stated in general terms, is not yet a safe or workable
+    session design. This chapter moves from why karaṇa practice might matter to how a teacher,
+    therapist, or caregiver might responsibly structure a session for each of the three populations
+    this volume addresses, and what should stop a session before it begins.</p>
+  </div>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">6.1</span> A Shared Foundation Before Any Population-Specific Adaptation</h3>
+    <p>Whatever the population, three design principles hold in common and should precede any of the
+    more specific adaptations this chapter describes. First, any such practice should be introduced
+    with the knowledge and, where appropriate, the direct involvement of the individual's existing
+    clinical or care team, so that the movement practice is understood as a supervised complement to
+    established care rather than an independent alternative to it. Second, sessions should begin
+    at a deliberately conservative level of difficulty and duration, since the point of graded practice
+    is to build success experiences rather than to introduce frustration or failure early. Third, a
+    qualified teacher trained in both karaṇa pedagogy and the specific needs of the population being
+    served is a precondition this chapter treats as non-negotiable; adapting a demanding classical
+    discipline for a clinical population is not a task for an untrained instructor working from written
+    description alone.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">6.2</span> Session Design for Attention-Deficit Presentations</h3>
+    <p>For this population, this chapter proposes short, frequent sessions over long, infrequent ones,
+    given the reward-cycle proposal of Chapter Two: a fifteen-minute session several times a week is
+    likely to sustain engagement better than a single long weekly class. Sessions should be structured
+    around single karaṇa elements practiced to a clear, quickly reached point of success before
+    combination into fuller sequences is attempted, giving frequent, legible markers of progress. Tāla
+    should be kept simple and steady in early sessions, with complexity introduced only once basic
+    engagement is established, and a teacher should expect and plan for movement breaks within a
+    session rather than treating restlessness as a failure of the approach.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">6.3</span> Session Design for Working-Memory Impairment</h3>
+    <p>For this population, this chapter proposes the graded, near-errorless approach Chapter Three
+    described: new material introduced in the smallest workable increment, correction offered
+    immediately rather than after several repetitions of an error, and a new increment introduced only
+    once the previous one is reliably secure. Verbal instruction should be paired consistently with the
+    same visual demonstration and physical guidance each time, since consistency of multimodal
+    presentation is itself part of what Chapter Three proposed makes multimodal encoding effective; a
+    teacher who varies phrasing, demonstration angle, or musical accompaniment between sessions removes
+    some of the very consistency the approach is meant to provide.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">6.4</span> Session Design Across the Three Stages of Dementia</h3>
+    <p>For mild-stage individuals, this chapter proposes sessions resembling Section 7.3's
+    working-memory approach, since the relevant capacities and the appropriate caution are similar. For
+    moderate-stage individuals with a personal dance history, this chapter proposes prioritizing
+    recognition and re-execution of long-familiar sequences over new learning, following the cue of the
+    individual's own body wherever it leads rather than correcting toward the sequence's original
+    precise form, since the goal at this stage is engagement and continuity rather than technical
+    accuracy. For advanced-stage individuals, this chapter proposes abandoning sequence-based
+    structure altogether in favor of simple rhythmic accompaniment and gentle, caregiver-guided single
+    gestures, offered without any expectation of independent execution, correction, or recall, and
+    discontinued immediately if the individual shows any sign of distress or overstimulation rather than
+    continued in the hope of eliciting a response.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">6.5</span> Signs That a Session Should Stop</h3>
+    <div class="callout safety">
+      <div class="lbl">Safety Note</div>
+      <p>Across all three populations, a session should be paused or ended, not pushed through, if the
+      individual shows signs of frustration escalating rather than resolving with a simpler task,
+      visible fatigue, agitation, distress, or disorientation beyond their ordinary baseline, or any
+      physical strain given the individual's own mobility and health status. A teacher or caregiver is
+      never wrong to end a session early; the entire rationale for this practice depends on it
+      remaining a source of success and engagement, which an overextended session actively undermines.</p>
+    </div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">6.6</span> Documentation as a Bridge to the Individual's Wider Care Team</h3>
+    <p>This chapter proposes that a teacher or caregiver keep simple, consistent notes on session
+    duration, which elements were attempted, what level of success and engagement resulted, and any
+    signs of distress, not as a research record but as a practical bridge to the individual's clinician
+    or therapist, who may find this observational record useful alongside their own assessments. This
+    also allows the practice's apparent value, or lack of it, for a specific individual to be tracked
+    honestly over time rather than relied on as a general assumption.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">6.7</span> Group Versus Individual Sessions</h3>
+    <p>Both group and individual session formats have distinct plausible advantages across the three
+    populations this volume addresses. Group sessions offer social engagement and peer modeling,
+    plausibly relevant to sustaining attention-deficit presentations' engagement through observed peer
+    success, and may support the collective, shared quality of rhythmic engagement this series'
+    companion volumes have discussed in ensemble performance contexts. Individual sessions offer
+    pacing fully calibrated to one person's specific needs, likely preferable during the early stages of
+    working-memory rehabilitation where errorless learning's precision matters most, and often more
+    practical for moderate-to-advanced dementia care where group settings may themselves become a source
+    of overstimulation. This chapter proposes format be chosen based on the individual's specific needs
+    and the setting's practical resources rather than treated as though one format were universally
+    preferable.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">6.8</span> Training Caregivers and Family Members as Co-Facilitators</h3>
+    <p>For working-memory-impaired and dementia populations especially, this chapter proposes that a
+    qualified teacher's role should include, where practical, briefly training a regular caregiver or
+    family member in the specific gestures, rhythms, or sequences a given individual is working with, so
+    that brief, low-intensity practice can continue between formal sessions under safe, familiar
+    guidance. This extends the graded, consistent, multimodal exposure Chapter Three's proposal
+    emphasized without requiring a qualified teacher's presence at every single practice moment, though
+    any caregiver-led practice between sessions should still be reviewed periodically by the qualified
+    teacher to ensure it remains correctly and safely delivered.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">6.9</span> Cultural and Personal Fit as a Practical Precondition</h3>
+    <p>Karaṇa practice carries specific cultural, aesthetic, and in some contexts devotional associations
+    that will resonate strongly with some individuals and families and feel unfamiliar or discordant to
+    others. This chapter proposes that a teacher or clinician introducing this practice be attentive to
+    this variation, offering it as one option among others rather than the presumed default, and adapting
+    presentation — for instance, foregrounding the movement and rhythm elements over any devotional
+    framing where that framing does not fit a given individual's or family's own background — without
+    misrepresenting the practice's actual tradition and roots in doing so.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">6.10</span> Teacher Training as a Precondition Not Yet Widely Met</h3>
+    <p>This chapter's proposals throughout have assumed the availability of a teacher trained in both
+    karaṇa pedagogy and the specific needs of clinical populations, a combination this chapter
+    acknowledges is not currently widely available; most karaṇa teachers are trained in the classical
+    performance tradition without specific clinical or special-needs pedagogical training, and most
+    clinicians and therapists working with these populations are not trained in karaṇa practice. This
+    chapter proposes that realizing this volume's proposals at any scale would require dedicated
+    cross-training bridging these two areas of expertise, a genuine practical undertaking this volume
+    flags honestly as a precondition still to be built rather than a resource this volume can assume
+    already exists.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">6.11</span> Cost, Access, and Equity Considerations</h3>
+    <p>Structured dance instruction of the kind this volume proposes is not universally affordable or
+    accessible, and this chapter notes that any serious effort to make karaṇa-based support available
+    to the populations this volume addresses would need to grapple directly with cost and access,
+    particularly for families and care settings with limited resources. This chapter does not propose a
+    specific solution to this practical constraint, but names it plainly as a limitation on how broadly
+    this volume's proposals could realistically be implemented without deliberate attention to
+    affordability and access alongside the clinical and pedagogical considerations this chapter has
+    otherwise addressed.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">6.12</span> Long-Term Maintenance and the Risk of Discontinuation</h3>
+    <p>Cognitive and physical training benefits of the general kind this volume has proposed are, in the
+    broader exercise and cognitive-training literature, generally understood to require ongoing practice
+    to maintain, with benefits tending to fade over time following discontinuation rather than persisting
+    indefinitely from an earlier period of training alone. This chapter proposes that karaṇa-based
+    practice, if adopted for the reasons this volume has described, should be planned as an ongoing,
+    sustained activity rather than a fixed-duration course expected to produce a lasting benefit on its
+    own, and that a realistic plan should include consideration from the outset of how continued
+    practice will be supported over the months and years following any initial structured program.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">6.13</span> A Provisional Statement on Practice Design</h3>
+    <p>This chapter's provisional statement holds that karaṇa practice, adapted along the lines this
+    chapter has described, can plausibly be introduced as a supervised, adjunctive activity for each of
+    the three populations this volume addresses, provided it is introduced with clinical knowledge and
+    involvement, delivered by a qualified teacher, calibrated to the individual's specific stage and
+    needs, and discontinued without hesitation at the first sign that it is causing distress rather than
+    supporting engagement.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+</section>
+
+<section class="panel" id="questions">
+  <div class="panel-head">
+    <div class="kicker">VII · What Would Need Testing</div>
+    <h2>From Plausible Mechanism to Testable Prediction</h2>
+    <p class="lede">Every proposal in Chapters Two through Five has been offered as plausible rather than
+    established. This chapter states, as sharply as this paper is able, what a future study would
+    actually need to measure before any of these proposals could be treated as more than a reasoned
+    hypothesis.</p>
+  </div>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">7.1</span> On Whether Karaṇa Training Improves Sustained Attention Beyond General Exercise</h3>
+    <p>Chapter Two's proposal implies a directly testable comparative question: whether children or
+    adults with attention-deficit presentations who undertake a course of structured karaṇa training
+    show greater improvement on standard sustained-attention and executive-function measures than a
+    comparison group undertaking a general physical-exercise program matched for duration, frequency,
+    and social engagement but lacking karaṇa's specific sequence, rhythm, and correction structure. A
+    result favoring the karaṇa group would support this chapter's proposal that the specific structural
+    features of the practice matter beyond generic physical activity; a null result would suggest that
+    general movement and social engagement, rather than anything specific to karaṇa, account for
+    whatever benefit is observed.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">7.2</span> On Whether Chunked Sequence Training Transfers to Non-Movement Working Memory Tasks</h3>
+    <p>Chapter Three's proposal implies a testable transfer question: whether individuals with
+    working-memory impairment who undertake graded karaṇa sequence training show improvement on
+    standard working-memory measures unrelated to movement, such as digit-span or verbal
+    sequence-recall tasks, beyond what would be expected from general cognitive engagement alone. A
+    genuine transfer effect would be a strong finding in favor of this volume's central proposal; its
+    absence would suggest karaṇa training builds movement-specific sequence memory without transferring
+    more broadly, a more modest but still potentially useful outcome.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">7.3</span> On Whether Early Sustained Practice Measurably Contributes to Cognitive Reserve</h3>
+    <p>Chapter Four's proposal about cognitive reserve implies a long-horizon, epidemiological question
+    rather than a short controlled trial: whether individuals with a documented history of sustained
+    karaṇa or comparable classical dance training across adulthood show, in later life, a later average
+    age of dementia symptom onset or a slower average rate of functional decline after onset, relative
+    to demographically matched individuals without such a history, controlling for the other factors
+    — education, occupational complexity, general physical activity — the reserve literature already
+    treats as contributing to reserve. This is a difficult study to design well precisely because of how
+    many confounding factors would need to be controlled, but it is the study that would most directly
+    test this volume's most ambitious claim.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">7.4</span> On Whether Advanced-Stage Responsiveness to Karaṇa Rhythm Exceeds General Music Responsiveness</h3>
+    <p>Chapter Four's proposal about advanced-stage engagement implies a comparative question against
+    the already-established finding that familiar music generally evokes responsiveness at this stage:
+    whether individuals with a personal dance history show measurably greater engagement, measured
+    through observable indicators such as sustained attention, reduced agitation, or spontaneous
+    gestural response, to karaṇa-associated rhythm and gesture specifically, compared to their
+    response to familiar music without an associated movement history. A positive result would suggest
+    the embodied, procedural component adds something beyond music alone; a null result would suggest
+    the benefit observed is attributable to musical familiarity in general rather than to the karaṇa
+    practice specifically.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">7.5</span> The General Method, Restated</h3>
+    <p>As in the existing chapters of this series that turn from existential proposal to testable
+    prediction, the four questions above follow a consistent method: state the specific structural
+    claim a chapter has made, identify the comparison condition that would isolate karaṇa practice's
+    specific contribution from the general contribution of movement, rhythm, or social engagement, and
+    state plainly what result would support the proposal and what result would count against it. This
+    method does not guarantee any of this volume's proposals will survive testing; it is offered so that
+    the proposals are stated in a form testing could actually address.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">7.6</span> On Whether Presentation Subtype Moderates Any Observed Benefit</h3>
+    <p>Section 2.7's proposal that inattentive, hyperactive-impulsive, and combined presentations may
+    respond to different structural features of karaṇa practice implies a testable moderation question:
+    whether the specific outcome measures on which each presentation improves differ in the direction
+    that proposal predicts — improvement concentrated in sustained-attention measures for the
+    primarily inattentive group, and improvement concentrated in measures of motor regulation and
+    on-task behavior for the hyperactive-impulsive and combined groups. A study finding this predicted
+    dissociation would support treating the practice's benefit as arising from distinct structural
+    features rather than a single undifferentiated effect; a study finding uniform improvement across
+    presentations regardless of subtype would suggest a more general, less mechanism-specific benefit
+    is at work.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">7.7</span> On Whether Dementia Subtype Moderates Responsiveness to Movement-Based Engagement</h3>
+    <p>Section 4.7's caution that dementia subtypes differ meaningfully implies a further testable
+    question: whether individuals with Lewy body dementia, given that subtype's overlapping motor
+    features, show different patterns of engagement with and physical response to karaṇa-based movement
+    activity than individuals with Alzheimer's-type or vascular dementia, and specifically whether motor
+    fluctuation documented in Lewy body dementia requires session timing to be matched to periods of
+    greater alertness and motor capacity for engagement to be comparable across subtypes. This
+    question matters practically as well as theoretically, since a program designed and evaluated
+    predominantly on an Alzheimer's-type population should not be assumed, without direct testing, to
+    transfer unchanged to other subtypes.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">7.8</span> On Whether Caregiver-Led Between-Session Practice Adds Measurable Benefit</h3>
+    <p>Section 6.8's proposal that trained caregivers extend practice between formal sessions implies a
+    directly testable comparative question: whether individuals receiving caregiver-supported practice
+    between weekly sessions show greater gains than individuals receiving the same weekly sessions
+    without any between-session practice, matched for total instructor contact time. A positive result
+    would support the practical value of caregiver training described in Chapter Six; a null result
+    would suggest formal instructor-led sessions alone account for whatever benefit is observed, with
+    caregiver-led practice adding engagement and relational value without adding measurable cognitive
+    benefit beyond that.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">7.9</span> Ethical Considerations for Any Study Testing These Proposals</h3>
+    <p>Any study designed to test the proposals in Sections 7.1 through 7.8 would need to address the
+    ethical considerations that attend research with children, individuals with cognitive impairment,
+    and individuals with dementia specifically, including informed consent or, where an individual's
+    capacity to consent is affected, appropriate assent and surrogate consent procedures; careful
+    attention to whether a comparison condition withholding a plausibly beneficial activity from a
+    control group is ethically justified; and ongoing monitoring for distress of the kind Chapter Six's
+    safety guidance described, with a clear protocol for withdrawing a participant from the study
+    immediately if distress occurs. This chapter states these considerations not as a formality but
+    because they are inseparable from responsible research with the specific populations this volume
+    addresses.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">7.10</span> On the Boundary This Volume Will Not Cross</h3>
+    <p>None of the readings developed in Chapters Two through Five is offered as a scientifically
+    established finding, a clinical protocol, or a substitute for a qualified professional's own
+    assessment and care plan. This applies with particular force to the reserve proposal of Chapter
+    Four, the most speculative and longest-horizon claim this volume has made, and to every proposal
+    in this volume concerning children or vulnerable adults, for whom any new activity, however
+    promising in principle, should be introduced only with the relevant clinician's or caregiver's
+    knowledge and consent.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <table>
+    <thead><tr><th>Proposal</th><th>Testable Prediction</th><th>Comparison Needed</th></tr></thead>
+    <tbody>
+      <tr><td>Karaṇa structure aids sustained attention beyond exercise generally</td><td>Greater gains on attention measures than matched exercise controls</td><td>Karaṇa group vs. general-exercise group, matched for duration and social engagement</td></tr>
+      <tr><td>Chunked sequence training builds transferable working memory</td><td>Improvement on non-movement working-memory tasks</td><td>Pre/post digit-span or verbal sequence-recall testing</td></tr>
+      <tr><td>Sustained practice contributes to cognitive reserve</td><td>Later symptom onset or slower decline in trained individuals</td><td>Long-term cohort study controlling for education, occupation, general activity</td></tr>
+      <tr><td>Karaṇa rhythm and gesture engage advanced-stage patients beyond music alone</td><td>Greater observable engagement than familiar music without dance history</td><td>Within-subject comparison of karaṇa cues vs. familiar non-dance music</td></tr>
+      <tr><td>Benefit is subtype-specific for attention-deficit presentations</td><td>Attention gains for inattentive type, behavioral-regulation gains for hyperactive-impulsive type</td><td>Outcome comparison stratified by clinical presentation subtype</td></tr>
+      <tr><td>Dementia subtype moderates movement-based engagement</td><td>Different engagement and physical-response patterns across subtypes</td><td>Cross-subtype comparison with session timing matched to motor fluctuation</td></tr>
+      <tr><td>Caregiver-led between-session practice adds benefit</td><td>Greater gains with caregiver practice than instructor-only sessions</td><td>Matched-contact-time comparison with and without caregiver-led practice</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section class="panel" id="unity">
+  <div class="panel-head">
+    <div class="kicker">VIII · A Unified Reading</div>
+    <h2>One Practice, Three Populations, One Underlying Claim</h2>
+    <p class="lede">Chapters Two through Seven treated attention, working memory, and dementia as three
+    distinct conditions with their own clinical pictures, mechanisms, and implementation needs. This
+    chapter asks what single claim, if any, unifies the volume's treatment of all three.</p>
+  </div>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">8.1</span> The Single Claim Beneath the Three Chapters</h3>
+    <p>Stripped of its condition-specific detail, this volume has made one claim repeatedly: that a
+    demanding, rhythmic, sequence-based, teacher-corrected movement practice engages, through
+    well-established general neural mechanisms, the same circuits and capacities that attention-deficit
+    presentations, working-memory impairment, and dementia each disrupt in their own specific way, and
+    that graded, supervised exposure to that practice is therefore a plausible, testable, adjunctive
+    candidate across all three, calibrated differently to each condition's specific clinical picture and
+    stage.</p>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">8.2</span> Why the Three Conditions Illuminate Different Facets of the Same Practice</h3>
+    <p>Attention-deficit presentations foreground karaṇa practice's reward structure and rhythmic
+    anchoring; working-memory impairment foregrounds its chunked, graded, multimodal sequence
+    architecture; dementia foregrounds its reliance on procedural memory and its capacity to offer
+    rhythmic and gestural engagement even after sequence recall has receded. None of these three facets
+    is unique to a single condition — reward structure plausibly matters for working memory too,
+    procedural memory plausibly matters for attention too — but each condition's own clinical picture
+    made a different facet the natural point of entry, and together the three chapters give a fuller
+    picture of the practice's structure than any single chapter could alone.</p>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">8.3</span> What This Reading Owes to Parts One Through Five</h3>
+    <p>This volume's clinical proposals would not be available without the descriptive groundwork Parts
+    One through Five laid. Chapter Three's account of chunking depends on Part One's biomechanical
+    definition of the karaṇa as a combination of sthāna, cārī, and hasta; Chapter Three's account of
+    procedural memory depends on Part Four's account of kriyā-jñāna as knowledge accessible only through
+    embodied repetition; Chapter Two's account of graded pedagogy depends on Part Five's account of
+    achieved rather than conferred authority, since a teacher's real-time correction is precisely the
+    exercise of that achieved authority. This volume is a clinical extension of the series' existing
+    descriptive work, not a departure from it.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">8.4</span> What Would Falsify This Unified Reading</h3>
+    <p>This reading would be substantially weakened if the comparative studies Chapter Seven proposed
+    consistently found no advantage for karaṇa-specific practice over generic movement, rhythm, or
+    social engagement matched for duration and intensity — a result that would suggest this volume's
+    proposed mechanisms, while individually well established in general neuroscience, do not in fact
+    depend on karaṇa's specific structural features in the way this volume has argued. It would be
+    weakened further if practitioners, teachers, or clinicians working directly with these populations
+    read this volume and found its proposals did not match their own practical experience of what
+    helps and what does not.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">8.5</span> What This Reading Does Not Claim About Yoga-Śāstra and Freedom From Side Effects</h3>
+    <p>It is sometimes said, of yogic and movement-based disciplines generally, that they offer a
+    solution carrying no side effects, in implicit contrast to pharmacological treatment. This chapter
+    states carefully why this volume does not adopt that framing as stated. A structured movement
+    practice is not risk-free: it can produce frustration, physical strain, or overexertion if poorly
+    calibrated to an individual's capacity, exactly as Chapter Six's safety guidance addressed, and it
+    is not interchangeable with medication or therapy that treat a specific underlying neurobiological
+    process directly. What this volume claims instead is narrower and, this chapter believes, more
+    honest: that karaṇa practice, responsibly adapted and supervised, is a plausible adjunctive
+    non-pharmacological support worth testing, not a side-effect-free alternative to established
+    medical care, and not a general solution to be offered in place of the specific care a qualified
+    professional provides.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">8.6</span> Precedent: Arts-Based and Movement-Based Therapy Within Established Health Systems</h3>
+    <p>This volume's proposals sit within a broader, already-recognized movement toward integrating
+    arts-based and movement-based approaches alongside conventional care in several health systems,
+    including structured programs bringing dance, music, and movement therapy into rehabilitation,
+    aged care, and developmental support settings as recognized complements to, rather than
+    replacements for, medical treatment. This chapter situates its own proposals as a specific,
+    culturally rooted contribution to this same broader, already-legitimate category, rather than as an
+    idiosyncratic claim standing apart from how arts-based intervention is generally treated within
+    established health and rehabilitation practice.</p>
+    <div class="tagrow"><span class="tag ms"><span class="dot"></span>Modern Scholarship</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">8.7</span> Why Rigor and Advocacy Should Not Be Confused</h3>
+    <p>This volume has tried throughout to keep two roles separate that a project like this one can too
+    easily blend: advocating for a tradition's continued relevance, and rigorously assessing what that
+    tradition can actually be shown to do. Cultural Musings' own broader project has an evident interest
+    in demonstrating the karaṇa system's continuing relevance to contemporary concerns; this chapter
+    holds that the most useful contribution this volume can make to that broader project is not
+    enthusiastic advocacy but the same careful, falsifiable, conservatively tagged reasoning this series
+    has applied throughout, since a clinically-adjacent claim that cannot survive careful scrutiny does
+    a tradition's genuine standing more harm than a modest, well-supported claim that can.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">8.8</span> The Practitioner's Own Testimony as a Further, Necessary Source</h3>
+    <p>This volume has drawn on general neuroscience and general movement-therapy literature, extrapolated
+    by this paper's own reasoning to karaṇa practice specifically. A further source this volume has not
+    been able to draw on directly, but which this chapter holds to be at least as important, is the
+    direct testimony of karaṇa teachers who have themselves worked with students facing attention,
+    memory, or cognitive difficulties, whose accumulated practical experience may confirm, qualify, or
+    directly contradict specific proposals this volume has made from theory alone. This chapter regards
+    such testimony, where it exists or can be gathered, as a necessary complement to the mechanistic
+    reasoning offered here, not a source this volume has had the opportunity to incorporate directly.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">8.9</span> The Relationship Between This Volume and the Series' Existential Register</h3>
+    <p>Part Four's fourteen existential chapters and Part Five's four further chapters described a
+    practitioner's encounter with dharma, freedom, mortality, and community; this volume has asked a
+    narrower, more instrumentally framed question about attention and memory specifically. This chapter
+    notes that these two registers need not compete for a given individual: a person engaging in
+    karaṇa-based practice for the cognitive and clinical reasons this volume proposes may, over
+    sustained practice, also encounter something of the existential structure Parts Four and Five
+    described — the passage toward svātantrya, the loosening of self at performance's boundary — even
+    though that existential encounter was not the reason the practice was originally introduced. This
+    volume does not require that encounter to occur for its own narrower proposals to hold, but notes it
+    as a possible further dimension available to those for whom it emerges.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">8.10</span> What This Means for the Series as a Whole</h3>
+    <p>Read alongside Parts One through Five, this sixth part extends the series' reach from the
+    performer's own body and community outward to a further population this series has not previously
+    addressed: individuals whose attention, memory, or cognitive function is affected by a
+    neurodevelopmental, acquired, or degenerative condition, and the caregivers, teachers, and
+    clinicians who support them. The series' underlying conviction — that the karaṇa system encodes,
+    in its precise combination of sequence, rhythm, correction, and embodiment, something of genuine
+    cognitive and existential substance rather than merely aesthetic or ritual value — is tested here
+    against a new and exacting standard: not whether the reading is philosophically coherent, but
+    whether it is clinically plausible and empirically testable.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+</section>
+
+<section class="panel" id="coda">
+  <div class="panel-head">
+    <div class="kicker">IX · Coda</div>
+    <h2>Glossary, Limits, and What Remains for a Further Part</h2>
+  </div>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">9.1</span> Acknowledging the Limits of This Volume's Authority</h3>
+    <p>This paper is written by an AI research instrument applying an interdisciplinary method across
+    dance scholarship, cognitive neuroscience, and clinical literature it has studied but not itself
+    practiced or clinically administered. Every claim in Chapters Two through Eight should be read with
+    this limit in view, with particular weight given to this caution wherever this volume has touched
+    on conditions affecting children or vulnerable adults, where an outside instrument's proposals are
+    least equipped to substitute for a qualified clinician's, therapist's, or caregiver's own direct
+    judgment.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">9.2</span> Glossary</h3>
+    <dl class="glossary">
+      <dt>Sthāna, Cārī, Hasta</dt><dd>Stance, movement-path, and hand gesture; the three combined elements of a single karaṇa, read in this volume as a native chunking structure.</dd>
+      <dt>Kriyā-jñāna</dt><dd>Knowledge accessible only through disciplined embodied action, read in this volume as substantially procedural rather than declarative memory.</dd>
+      <dt>Tāla</dt><dd>The rhythmic cycle accompanying karaṇa practice, read in this volume as a candidate external attentional and motor-timing anchor.</dd>
+      <dt>Aṅgahāra</dt><dd>A sequence of multiple karaṇas combined; read in this volume as the fuller, longer working-memory challenge graded practice builds toward.</dd>
+      <dt>Svātantrya</dt><dd>Self-dependence or autonomy; the achieved fluency of sequence learning discussed in this volume through the neuroscience of automatization.</dd>
+      <dt>Cognitive reserve</dt><dd>The brain's capacity to sustain function despite accumulating pathology, proposed in this volume to be plausibly supported by sustained karaṇa practice.</dd>
+      <dt>Errorless learning</dt><dd>A memory-rehabilitation approach minimizing exposure to incorrect attempts during acquisition, compared here to traditional karaṇa correction pedagogy.</dd>
+      <dt>Rhythmic auditory-motor entrainment</dt><dd>The documented tendency of movement to synchronize with a steady external beat, applied here to tāla's role in attention and movement organization.</dd>
+      <dt>Cortico-basal-ganglia-cerebellar circuits</dt><dd>Neural circuits supporting motor sequence learning and automatization, proposed in this volume as directly engaged by karaṇa training.</dd>
+      <dt>Default mode network</dt><dd>Brain regions more active during rest and mind-wandering than focused task engagement, proposed in this volume as plausibly suppressed by karaṇa practice's continuous demand.</dd>
+      <dt>Neurotrophic signaling (BDNF)</dt><dd>Molecular signaling supporting neuronal survival and plasticity, increased by sustained physical activity of the general kind karaṇa practice involves.</dd>
+      <dt>Cognitive reserve</dt><dd>See earlier entry; restated here as the concept most relevant to this volume's longest-horizon, hardest-to-test proposal.</dd>
+    </dl>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">9.3</span> A Summary Table of This Volume's Proposals and Their Evidentiary Status</h3>
+    <table>
+      <thead><tr><th>Population</th><th>Central Proposal</th><th>Evidentiary Status</th></tr></thead>
+      <tbody>
+        <tr><td>Attention-deficit presentations</td><td>Reward-rich, rhythmically anchored, structured-motor practice supports sustained attention</td><td>Plausible extrapolation from general movement and reward-circuitry literature; karaṇa-specific testing not known to exist</td></tr>
+        <tr><td>Working-memory impairment</td><td>Chunked, graded, multimodal, near-errorless sequence training builds transferable sequence memory</td><td>Plausible extrapolation from established memory-rehabilitation principles; transfer to non-movement tasks untested</td></tr>
+        <tr><td>Dementia, mild-to-moderate stage</td><td>Procedural memory preservation supports continued or resumed practice and identity continuity</td><td>Consistent with established procedural-memory literature; specific to karaṇa untested</td></tr>
+        <tr><td>Dementia, advanced stage</td><td>Rhythmic and gestural engagement offers comfort and connection independent of sequence recall</td><td>Consistent with established music-therapy findings in dementia care; karaṇa-specific comparison untested</td></tr>
+        <tr><td>Cognitive reserve, general</td><td>Sustained lifelong practice plausibly contributes to reserve</td><td>Consistent with general reserve literature; long-horizon cohort study would be needed to test directly</td></tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">9.4</span> What This Volume Has Not Done</h3>
+    <p>This volume has not demonstrated, through direct clinical trial, that karaṇa practice measurably
+    improves attention, working memory, or dementia outcomes; no such trial specific to karaṇa practice
+    is known to this paper to have been conducted. It has argued only that the practice's specific
+    structural features are plausible, mechanistically grounded candidates for testing, that the
+    existing general literature on movement, rhythm, and dance-based intervention lends independent
+    support to that plausibility, and that responsible, supervised, clinically-integrated
+    implementation is achievable along the lines Chapter Six described.</p>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">9.5</span> Where This Volume Sits in the Series</h3>
+    <p>This sixth part stands alongside the series' five prior volumes as a deliberate shift in
+    register: where Parts One through Five read the karaṇa system from within its own discipline
+    outward toward biomechanics, history, neuropsychology, and existential and social structure, this
+    sixth part reads it from an external clinical vantage point back toward the practice, asking not
+    what the karaṇa means but what it might measurably do for three specific populations. Neither
+    register replaces the other; this volume's clinical proposals depend throughout on the descriptive
+    and existential groundwork the prior five volumes established.</p>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">9.6</span> A Word to Practitioners and Teachers Reading This Volume</h3>
+    <p>This volume has been written primarily from the outside, drawing on clinical and neuroscientific
+    literature rather than years spent teaching karaṇa to a student with attention-deficit presentation,
+    working-memory impairment, or dementia. This chapter closes with a direct acknowledgment to any
+    teacher or practitioner reading this volume who has that direct experience: this paper's proposals
+    are offered as a starting framework for conversation, not a finished account, and this chapter would
+    regard it as a genuine success if practitioners' own accumulated experience corrected, refined, or
+    extended what this volume has proposed from theory and general literature alone.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">9.7</span> Where a Further Part Might Go</h3>
+    <p>This volume has confined itself to attention, working memory, and dementia. A companion seventh
+    part, taking up epilepsy, autism spectrum conditions, and other specially-abled populations, raises
+    a distinct set of considerations this volume has not addressed — most importantly, the genuine
+    safety complexities rhythmic and visual stimulation can introduce for some individuals with
+    seizure disorders, and the quite different sensory-regulation and communication considerations
+    relevant to autism spectrum conditions — and is best treated as its own volume with its own
+    dedicated safety framework rather than folded into this one.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+
+  <section class="block">
+    <h3 class="block-h"><span class="idx">9.8</span> Closing Statement</h3>
+    <p>Five volumes of this series described a discipline capable of holding a body at the threshold
+    between mechanism and self, between rupture and continuity, between individual and lineage. This
+    sixth volume has asked whether that same discipline, read carefully and without overclaiming, has
+    something to offer three populations for whom attention, memory, or both have become harder to
+    hold onto than they once were. The honest answer this volume can give is not a cure and not a
+    proof, but a plausible, testable, and respectfully bounded proposal: that a practice built for
+    thousands of years around holding a demanding sequence in a moving body may have something real,
+    still to be properly measured, to offer a mind working harder than it once did to hold on to its
+    own sequences.</p>
+    <div class="tagrow"><span class="tag as"><span class="dot"></span>AI Synthesis</span></div>
+  </section>
+</section>
+
+`;
+</script>
+
+</body>
+</html>
